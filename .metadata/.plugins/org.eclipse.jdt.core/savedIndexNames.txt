@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\QSPIDERS\JAVA Practice program\Advance java\.metadata\.plugins\org.eclipse.jdt.core
+3182326097.index
+279844457.index
+3013897810.index
+4077181896.index
+2750716043.index
+1843344566.index
+2186899505.index
+1865797976.index
+1901201092.index

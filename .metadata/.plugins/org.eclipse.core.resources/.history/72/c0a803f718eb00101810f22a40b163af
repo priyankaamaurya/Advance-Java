@@ -1,0 +1,36 @@
+package com;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Program2 {
+
+	public static void main(String[] args) {
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			
+			String url=("jdbc:postgresql://localhost:5432/first");
+			String user="postgres";
+			String password="root";
+			
+			Connection connection =DriverManager.getConnection(url,user,password);
+			System.out.println(connection);
+			
+			Statement statement=connection.createStatement();
+			
+			statement.execute("insert into student (1001 , 'Arav'), (1002 , 'Abhay'),(1003 , 'Ronak'),(1004 , 'Aman'),(1005 , 'Krishna'),(1006 , 'Nikhil'),(1007 , 'Raj'),(1008 , 'Naveen'),(1009 , 'Ayush'),(1010 , 'Piyush'),(1011 , 'Prince'),(1012 , 'Alok'),(1013 , 'Sachin'),(1014 , 'Vikram'),(1015 , 'Suraj');");
+			
+			connection.close();
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

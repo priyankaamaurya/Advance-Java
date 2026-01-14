@@ -1,0 +1,33 @@
+package com;
+
+public class First {
+
+	public static void main(String[] args) {
+		//jdbc logic
+		
+		//jdbc 5 steps
+		
+		//load driver
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			
+			//create connection  server and java
+			//location-url
+			//username
+			//password
+			//protocol: //server:port/endpoint
+			//jdbc:databasename://localhost:5432/dbname
+			
+			String url="jdbc:postgresql://localhost:5432/first";
+			String user="postgres"; //root
+			String password="root";
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
